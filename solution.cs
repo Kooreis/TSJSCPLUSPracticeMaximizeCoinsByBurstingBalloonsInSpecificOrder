@@ -1,8 +1,4 @@
-function maxCoins(nums) {
-    let n = nums.length;
-    let input = new Array(n + 2);
-    for (let i = 0; i < n; i++) {
-        input[i + 1] = nums[i];
+let dp = new Array(n + 2);
+    for (let i = 0; i < dp.length; i++) {
+        dp[i] = new Array(n + 2).fill(0);
     }
-    input[0] = input[n + 1] = 1;
-}
